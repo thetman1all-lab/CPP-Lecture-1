@@ -1,8 +1,16 @@
 // Write a C++ program that:
 
-// - Asks for user input: name (string, use std::getline for spaces), age (int), height (double).
-// - Uses a conditional: If age >= 18, output "Welcome, [name]—you're an adult at [age] years and [height] meters tall."
-// - Else: "Hey [name], you're still young at [age]—keep growing to [height] meters!"
+// - Asks for user input: 
+// name (string, use std::getline for spaces),
+// age (int),
+// height (double)
+
+// - Uses a conditional:
+// If age >= 18, output "Welcome, [name]—you're an adult at [age] years and [height] meters tall."
+
+// - Else: 
+// "Hey [name], you're still young at [age]—keep growing to [height] meters!"
+
 // - Add a bool: Ask if excited about C++ (y/n), store as bool
 // (e.g., char input; cin >> input; bool excited = (input == 'y');), and append "And you're excited: [true/false]." Use boolalpha.
 
@@ -17,15 +25,33 @@
 // - For strings with spaces, use namespace <string>:
 // std::getline(std::cin, name);
 
-// General structure of if/else chains:
+// - General structure of if/else chains:
 // if (...) {code} else if (...) {code} else {code}
+
+// - Operators:
+// == (equal), != (not), >, <, >=, <=, && (and), || (or), ! (not)
 
 #include <iostream>
 #include <string>
 #include <iomanip>
 
 int main() {
-    
+    // Define variables for user to input
+    std::string name;
+    int age;
+    double height;
+
+    // Prompt user to input name
+    std::cout << "Enter name:" << std::endl;
+    std::getline(std::cin, name);
+
+    // Prompt user to input age
+    std::cout << "Enter age:" << std::endl;
+    std::cin >> age;
+
+    // Prompt user to input height
+    std::cout << "Enter height:" << std::endl;
+    std::cin >> height;
 
     return 0;
 }
