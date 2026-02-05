@@ -1,16 +1,5 @@
 // Write a C++ program that:
 
-// - Asks for user input: 
-// name (string, use std::getline for spaces),
-// age (int),
-// height (double)
-
-// - Uses a conditional:
-// If age >= 18, output "Welcome, [name]—you're an adult at [age] years and [height] meters tall."
-
-// - Else: 
-// "Hey [name], you're still young at [age]—keep growing to [height] meters!"
-
 // - Add a bool: Ask if excited about C++ (y/n), store as bool
 // (e.g., char input; cin >> input; bool excited = (input == 'y');), and append "And you're excited: [true/false]." Use boolalpha.
 
@@ -52,6 +41,15 @@ int main() {
     // Prompt user to input height
     std::cout << "Enter height:" << std::endl;
     std::cin >> height;
+
+    // Logic to determine if adult or child and response
+    if (age >= 18) {
+        std::cout << "Welcome, " << name << "-you're an adult at " << age << " years and " << height << " meters tall."
+        << std::endl;
+    } else {
+        std::cout << "Hey " << name << ", you're still young at " << age << "-keep growing to " << height << " meters!"
+        << std::endl;
+    }
 
     return 0;
 }
