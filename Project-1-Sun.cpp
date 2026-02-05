@@ -29,6 +29,7 @@ int main() {
     std::string name;
     int age;
     double height;
+    char y_or_n;
 
     // Prompt user to input name
     std::cout << "Enter name:" << std::endl;
@@ -51,5 +52,11 @@ int main() {
         << std::endl;
     }
 
+    // Prompts and logic for excitement to learn C++
+    std::cout << "Are you excited to learn C++? (y/n):" << std::endl;
+    std::cin >> y_or_n;
+    bool excitement = (y_or_n == 'y');
+    std::cout << std::boolalpha << "It is " << excitement << " that you are excited to learn C++" << std::endl;
+    
     return 0;
 }
