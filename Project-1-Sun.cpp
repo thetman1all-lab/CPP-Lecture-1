@@ -1,25 +1,3 @@
-// Write a C++ program that:
-
-// - Add a bool: Ask if excited about C++ (y/n), store as bool
-// (e.g., char input; cin >> input; bool excited = (input == 'y');), and append "And you're excited: [true/false]." Use boolalpha.
-
-// Requirements:
-
-// Proper includes.
-// Handle input cleanly (prompts like "Enter name: ").
-// Under 30 lines, clean code.
-// Commit to a new GitHub repo, push, and share the repo link with your submission.
-
-// Tips
-// - For strings with spaces, use namespace <string>:
-// std::getline(std::cin, name);
-
-// - General structure of if/else chains:
-// if (...) {code} else if (...) {code} else {code}
-
-// - Operators:
-// == (equal), != (not), >, <, >=, <=, && (and), || (or), ! (not)
-
 #include <iostream>
 #include <string>
 #include <iomanip>
@@ -57,6 +35,6 @@ int main() {
     std::cin >> y_or_n;
     bool excitement = (y_or_n == 'y');
     std::cout << std::boolalpha << "It is " << excitement << " that you are excited to learn C++" << std::endl;
-    
+
     return 0;
 }
