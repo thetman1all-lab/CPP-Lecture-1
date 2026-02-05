@@ -14,8 +14,11 @@
 // Commit to a new GitHub repo, push, and share the repo link with your submission.
 
 // Tips
-// For strings with spaces, use namespace <string>:
+// - For strings with spaces, use namespace <string>:
 // std::getline(std::cin, name);
+
+// General structure of if/else chains:
+// if (...) {code} else if (...) {code} else {code}
 
 #include <iostream>
 #include <string>
