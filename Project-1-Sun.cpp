@@ -21,20 +21,23 @@ int main() {
     std::cout << "Enter height:" << std::endl;
     std::cin >> height;
 
-    // Logic to determine if adult or child and response
-    if (age >= 18) {
-        std::cout << "Welcome, " << name << "-you're an adult at " << age << " years and " << height << " meters tall."
-        << std::endl;
-    } else {
-        std::cout << "Hey " << name << ", you're still young at " << age << "-keep growing to " << height << " meters!"
-        << std::endl;
-    }
-
-    // Prompts and logic for excitement to learn C++
+    // Promt the user to input excitment
     std::cout << "Are you excited to learn C++? (y/n):" << std::endl;
     std::cin >> y_or_n;
+
+    // Determine if excited from the user's input
     bool excitement = (y_or_n == 'y');
-    std::cout << std::boolalpha << "It is " << excitement << " that you are excited to learn C++" << std::endl;
+
+    // Logic to determine if adult or child and response
+    if (age >= 18) {
+        std::cout << "Welcome, " << name << ", you're an adult at " << age << " years old and " << height
+                  << " meters tall." << std::boolalpha << " And it is " << excitement
+                  << " that you are excited to learn C++" << std::endl;
+    } else {
+        std::cout << "Hey " << name << ", you're still young at " << age << " years old. Keep growing to " << height
+                  << " meters!" << std::boolalpha << " And it is " << excitement
+                  << " that you are excited to learn C++" << std::endl;
+    }
 
     return 0;
 }
