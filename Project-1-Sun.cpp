@@ -28,7 +28,7 @@ int main() {
     // Determine if excited from the user's input
     bool excitement = (y_or_n == 'y');
 
-    // Logic to determine if adult or child and response
+    // If/else statement to determine proper output to user
     if (age >= 18) {
         std::cout << "Welcome, " << name << ", you're an adult at " << age << " years old and " << height
                   << " meters tall." << std::boolalpha << " And it is " << excitement
